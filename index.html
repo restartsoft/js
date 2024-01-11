@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div class="outer" id="out">
+        <div class="inner">Hello Loftschool</div>
+        <a href="https://loftschool.com" class="link">Loftschool</a>
+    </div>
+    <script>
+        console.log("test");
+        var element = document.querySelector(".inner");
+        element.style.backgroundColor = "#0fa";
+        element.style.fontSize = "30px";
+        element.textContent = "Привет Loftschool!";
+        
+        var outerElement = document.querySelector(".outer");
+        var newElement = document.createElement("div");
+
+        outerElement.appendChild(newElement);
+    </script>
+</body>
+<!-- <script src="./script.js"></script> -->
+</html>
